@@ -1,0 +1,33 @@
+body {
+    font-family: $font-family-primary;
+    font-size: $font-size-xxs;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: $font-size-md;
+    color: $color-light;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+a {
+    color: $color-dark;
+}
+
+button {
+    font-size: $font-size-xs;
+    color: $color-light;
+    font-weight: 700;
+}
+
+.main-container {
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @include for-desktop {
+        padding: 0 100px;
+        max-width: 1440px;
+    }
+}

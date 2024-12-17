@@ -1,0 +1,15 @@
+// @mixin for-phone {
+//     @media (max-width: 575px) { @content; }
+// }
+
+@mixin for-tablet {
+    @media (min-width: 576px) { @content; }
+}
+
+@mixin for-desktop {
+    @media (min-width: 992px) { @content; }
+}
+
+// @include for-phone {    
+//     propriété : valeur;
+//  }

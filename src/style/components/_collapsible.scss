@@ -1,0 +1,54 @@
+@import './../utils/variables';
+@import './../utils/mixins';
+
+
+.title-desc-container {
+    width: 100%;
+    background-color: $color-003;
+    margin-bottom: 20px;
+    border-radius: 5px;
+
+    @include for-tablet {
+        margin-bottom: 28px;
+    }
+
+    
+    button {
+        width: 100%;
+        background-color: $color-001;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        cursor: pointer;
+
+        @include for-tablet {
+            font-size: $font-size-lg;
+        }
+
+        img {
+            transition: all 0.3s ease-in-out;
+            @include for-tablet {
+                width: 24px;
+                height: 14px;
+            }
+
+            &.chevron-down {
+                transform: rotate(0.5turn);
+            }
+        }
+    }
+
+
+    .description {
+        padding: 13px 20px;
+        font-size: $font-size-xxs;
+        font-weight: 400;
+        line-height: 1.4;
+
+        @include for-tablet {
+            font-size: $font-size-md;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    
+    @include for-desktop {
+        margin-top: 45px;
+    }
+
+
+    img {
+        max-width: 38vw;
+        @include for-tablet {
+            width: 211px;
+            height: 68px;
+        }
+    }
+    nav {
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            
+            li {
+                margin-left: 26px;
+                text-transform: uppercase;
+                white-space: nowrap;
+                
+                @include for-tablet {
+                    margin-left: 57px;
+                    font-size: $font-size-lg;
+                    text-transform: inherit;
+                }
+                
+                a.active {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
