@@ -1,0 +1,57 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.large-main-container {
+    width: 100%;
+    padding: 113px 0;
+
+    // height: calc(100vh - 209px - 67px);
+    @include for-desktop {
+        // height: calc(100vh - 209px - 113px);
+        padding: 139px 0;
+
+    }
+
+    h1 {
+        color: $color-001;
+        font-size: $font-size-4xl;
+        font-weight: 700;
+        text-align: center;
+
+        @include for-desktop {
+            font-size: $font-size-5xl;
+        }
+    }
+
+    p {
+        color: $color-001;
+        font-size: $font-size-md;
+        text-align: center;
+        padding: 113px 0;
+        white-space: pre-line;
+
+        @include for-desktop {
+            padding: 139px 0;
+            font-size: $font-size-xxl;
+        }
+
+        span {
+            display: block;
+            width: 100%;
+            @include for-desktop {
+                display: inline;
+            }
+        }
+
+    }
+
+    a {
+        font-size: $font-size-sm;
+        text-decoration: underline;
+        text-align: center;
+
+        @include for-desktop {
+            font-size: $font-size-md;
+        }
+    }
+}

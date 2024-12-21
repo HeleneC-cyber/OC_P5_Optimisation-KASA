@@ -13,6 +13,7 @@ header {
 
 
     img {
+        display: block;
         max-width: 38vw;
         @include for-tablet {
             width: 211px;

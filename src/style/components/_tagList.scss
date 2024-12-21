@@ -1,0 +1,8 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.tag {
+    background-color: $color-001;
+    color: $color-light;
+    
+}
