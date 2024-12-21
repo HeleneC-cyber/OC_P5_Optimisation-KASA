@@ -1,8 +1,27 @@
 @import '../utils/variables';
 @import '../utils/mixins';
 
-.tag {
-    background-color: $color-001;
-    color: $color-light;
-    
+.tags {
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .tag {
+        background-color: $color-001;
+        color: $color-light;
+        text-align: center;
+        align-content: center;
+        min-width: 84px;
+        height: 18px;
+        border-radius: 5px;
+        padding: 2px 20px;
+        font-size: $font-size-3xs;
+
+        @include for-tablet {
+            height: 25px;
+            border-radius: 10px;
+            padding: 2px 30px;
+            font-size: $font-size-sm;
+
+        }
+    }
 }

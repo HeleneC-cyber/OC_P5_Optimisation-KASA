@@ -17,6 +17,10 @@ a {
     display: block;
 }
 
+ul {
+    display: flex;
+}
+
 button {
     font-size: $font-size-xs;
     color: $color-light;

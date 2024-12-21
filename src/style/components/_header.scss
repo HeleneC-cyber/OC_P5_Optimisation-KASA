@@ -15,7 +15,7 @@ header {
     img {
         display: block;
         max-width: 38vw;
-        @include for-tablet {
+        @include for-desktop {
             width: 211px;
             height: 68px;
         }
@@ -23,15 +23,17 @@ header {
     nav {
 
         ul {
-            display: flex;
-            flex-direction: row;
-            
+ 
             li {
                 margin-left: 26px;
                 text-transform: uppercase;
                 white-space: nowrap;
-                
+
                 @include for-tablet {
+                    font-size: $font-size-md;
+                }
+                
+                @include for-desktop {
                     margin-left: 57px;
                     font-size: $font-size-lg;
                     text-transform: inherit;

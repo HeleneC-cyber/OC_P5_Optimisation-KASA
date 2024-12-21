@@ -1,0 +1,21 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+ul {
+    gap: 7px;
+    @include for-tablet {
+    gap: 16px;
+
+    }
+    li {
+
+        img {
+
+@include for-tablet {
+    width: 24px;
+    height: 24px;
+}
+        }
+    }
+}

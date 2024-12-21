@@ -1,0 +1,106 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+
+.desc-container {
+    margin: 15px 0 13px;
+
+    @include for-tablet {
+        margin: 24px 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titles-tags-container {
+        margin-bottom: 16px;
+
+        @include for-tablet {
+            margin: 0 10px 24px 0;
+        }
+
+        h1 {
+            font-size: $font-size-md;
+            color: $color-001;
+            line-height: 1.4;
+
+            @include for-tablet {
+                margin-top: 6px;
+            }
+
+            @include for-desktop {
+                font-size: $font-size-xxl;
+
+            }
+        }
+
+        .lodging-location {
+            font-size: $font-size-sm;
+            margin: 5px 0 10px;
+
+            @include for-tablet {
+                font-size: $font-size-md;
+                margin: 5px 0 20px;
+
+            }
+        }
+    }
+
+    .profil-rating-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        // margin-bottom: 13px;
+        @include for-tablet {
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+        }
+
+        .profil {
+            display: flex;
+            align-items: center;
+
+            @include for-tablet {
+                margin-bottom: 21px;
+            }
+
+            .profil-name {
+                color: $color-001;
+                font-size: $font-size-xxs;
+                display: flex;
+                text-align: right;
+                line-height: 1.4;
+                // Précise et force le respect des retours à la ligne (définit dans le projet avec \n)
+                white-space: pre-line;
+                margin-right: 10px;
+
+                @include for-tablet {
+                    font-size: $font-size-md;
+                    // max-width: 80px;
+
+                }
+            }
+
+            .profil-overlay {
+                width: 32px;
+                height: 32px;
+                border-radius: 25px;
+                overflow: hidden;
+
+                @include for-tablet {
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50px;
+
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                }
+
+            }
+        }
+    }
+}
