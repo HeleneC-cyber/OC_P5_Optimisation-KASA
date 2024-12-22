@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import TagList from '../components/tagList';
 import lodgings from './../data/lodging.json';
 import StarsRating from "../components/starsRating";
+import Collapsible from "../components/collapsible";
+
 
 // Import style
 import './../style/pages/_lodgingPage.scss';
@@ -38,21 +40,30 @@ const LodgingPage = () => {
 
                 <div className="profil-rating-container">
                     {//Même logique que les tags, pour la notation "rating"
-                    lodgingItem.rating && <StarsRating rating={lodgingItem.rating} />}
+                        lodgingItem.rating && <StarsRating rating={lodgingItem.rating} />}
                     <div className="profil">
                         {/* Replace remplace ici l'espace entre le nom et le prénom par un retour à la ligne */}
-                        <p className="profil-name">{lodgingItem.host?.name.replace(" ", "\n") }</p> 
+                        <p className="profil-name">{lodgingItem.host?.name.replace(" ", "\n")}</p>
                         <div className="profil-overlay">
-                        <img src={lodgingItem.host?.picture} alt={lodgingItem.host?.name} />
+                            <img src={lodgingItem.host?.picture} alt={lodgingItem.host?.name} />
                         </div>
                     </div>
                 </div>
 
-
             </div>
 
+            <div className="collapsibles-container">
+                
+                {lodgingItem.rating && 
+                    <>
+                    <Collapsible key={lodgingItem.id} title="Description" description={lodgingItem.description} />
+                    <Collapsible key={lodgingItem.equipements} title="Équipements" description={lodgingItem.equipments} />
+                    </>
+            }
+                {console.log(lodgingItem.equipments)}
+            </div>
         </main>
-    );
-};
+    )
+}
 
 export default LodgingPage;

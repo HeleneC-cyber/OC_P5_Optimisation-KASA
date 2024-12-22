@@ -11,7 +11,11 @@ const Collapsible = ({ title, description }) => {
 
     Collapsible.propTypes = {
         title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
+        // La description accepte : string ou array
+        description: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.arrayOf(PropTypes.string)
+        ]).isRequired
 
     }
 
@@ -23,9 +27,14 @@ const Collapsible = ({ title, description }) => {
                     {title}
                 <img className={isOpen ? "chevron-down" : ""} src={chevron} alt="chevron" />
             </button>
-            {isOpen &&
-                <div className="description">{description}</div>
-            }
+
+                <div className={`description ${isOpen ? "open" : "closed"}`}>
+                {Array.isArray(description)
+                        // Affiche chaque élément du tableau
+                        ? description.map((item) => <p key={item}>{item}</p>) 
+                        // Affiche la description si c'est une string
+                        : description 
+                    }</div>
         </div>
     );
 };
