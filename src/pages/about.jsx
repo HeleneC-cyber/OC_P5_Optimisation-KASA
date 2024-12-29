@@ -1,8 +1,9 @@
+// Import des composants
 import Banner from "../components/banner";
 import Collapsible from "../components/collapsible";
-
+// Import img
 import bannerAbout from './../assets/about.png';
-
+// Import style
 import './../style/pages/_about.scss';
 
 
@@ -31,7 +32,7 @@ const About = () => {
 
     return (
             <main>
-                <Banner nameSrc={bannerAbout} nameAlt="vallée dans une chaine montagneuse" isEmpty />
+                <Banner nameSrc={bannerAbout} nameAlt="vallée dans une chaine montagneuse" />
                 <div className="collapsible-container">
             {aboutList.map((aboutItem) =>
                 <Collapsible key={aboutItem.title} title={aboutItem.title} description={aboutItem.description} />

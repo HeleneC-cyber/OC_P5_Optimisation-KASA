@@ -1,6 +1,5 @@
 // Import des dépendances
 import { Link } from "react-router";
-
 // Import style
 import './../style/pages/_pageNotFound.scss';
 

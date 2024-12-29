@@ -1,0 +1,81 @@
+@import './../utils/variables';
+@import './../utils/mixins';
+
+
+.slider {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 27px;
+
+    @include for-tablet {
+        border-radius: 25px;
+        margin-top: 50px;
+    }
+
+    .slides-container {
+        display: flex;
+        width: 100%;
+        height: 255px;
+        // overflow: hidden;
+        // max-width: ;
+
+        @include for-tablet {
+            height: 415px;
+        }
+
+        .slide {
+            width: 100%;
+
+            img {
+                display: block;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .chevron-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 6px;
+        transform: rotate(0.5turn);
+
+        @include for-tablet {
+            top: calc(50% - 40px);
+            left: 24px;
+            width: 47px;
+            height: 80px;
+        }
+    }
+
+    .chevron-next {
+        position: absolute;
+        top: calc(50% - 6px);
+        right: 6px;
+
+        @include for-tablet {
+            top: 50%;
+            transform: translateY(-50%);
+            right: 24px;
+            width: 47px;
+            height: 80px;
+        }
+    }
+
+    .counter {
+        display: none;
+
+        @include for-tablet {
+            display: block;
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            text-align: center;
+            color: $color-light;
+            font-size: $font-size-md;
+        }
+    }
+}

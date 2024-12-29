@@ -5,25 +5,24 @@ import './../style/components/_banner.scss';
 
 
 
-const Banner = ({ nameSrc, nameAlt, isEmpty }) => {
-
-    // Définition du type de props utilisées dans le composant
-    Banner.propTypes = {
-        nameSrc: PropTypes.string.isRequired,
-        nameAlt: PropTypes.string.isRequired,
-        // Si on précise que la valeur boléenne est requise (true/false) on doit préciser l'état du props, sinon par défaut : isEmpty=true si rien écrit=false
-        isEmpty: PropTypes.bool,
-      }
+const Banner = ({ nameSrc, nameAlt, title }) => {
 
     // Rendu du composant 
     return (
-        <section className={isEmpty ? "banner-container small-space" : "banner-container"} >
+        <section className={title ? "banner-container" : "banner-container small-space"} >
             <img src={nameSrc} alt={nameAlt} />
-            <div className={isEmpty ? "overlay-title small-opacity" : "overlay-title"}>
-                {!isEmpty && <h1>Chez vous, partout et ailleurs</h1>}
+            <div className={title ? "overlay-title" : "overlay-title small-opacity"}>
+                {title && <h1>{title}</h1>}
             </div>
         </section>
     );
 };
+
+// Définition du type de props utilisées dans le composant
+Banner.propTypes = {
+    nameSrc: PropTypes.string.isRequired,
+    nameAlt: PropTypes.string.isRequired,
+    title: PropTypes.string
+}
 
 export default Banner;
