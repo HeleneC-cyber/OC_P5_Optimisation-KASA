@@ -5,11 +5,8 @@
     width: 100%;
     padding: 113px 0;
 
-    // height: calc(100vh - 209px - 67px);
     @include for-desktop {
-        // height: calc(100vh - 209px - 113px);
         padding: 139px 0;
-
     }
 
     h1 {
@@ -42,7 +39,6 @@
                 display: inline;
             }
         }
-
     }
 
     a {

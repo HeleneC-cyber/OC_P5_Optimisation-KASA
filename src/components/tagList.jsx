@@ -1,13 +1,11 @@
+// Import des dépendances
 import PropTypes from 'prop-types';
-// import lodgings from './../data/lodging.json';
+// Import style
 import './../style/components/_tagList.scss';
 
 
-const TagList = ({ tags }) => {
-    TagList.propTypes = {
-        tags: PropTypes.array.isRequired
 
-    }
+const TagList = ({ tags }) => {
 
     return (
         <ul className='tags'>
@@ -18,5 +16,9 @@ const TagList = ({ tags }) => {
         </ul>
     );
 };
+
+TagList.propTypes = {
+    tags: PropTypes.array.isRequired
+}
 
 export default TagList;

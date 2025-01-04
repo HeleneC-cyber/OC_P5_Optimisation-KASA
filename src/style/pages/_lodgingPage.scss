@@ -31,7 +31,6 @@ main {
 
                 @include for-desktop {
                     font-size: $font-size-xxl;
-
                 }
             }
 
@@ -42,7 +41,6 @@ main {
                 @include for-tablet {
                     font-size: $font-size-md;
                     margin: 5px 0 20px;
-
                 }
             }
         }
@@ -52,7 +50,6 @@ main {
             justify-content: space-between;
             align-items: center;
 
-            // margin-bottom: 13px;
             @include for-tablet {
                 flex-direction: column-reverse;
                 justify-content: flex-end;
@@ -78,8 +75,6 @@ main {
 
                     @include for-tablet {
                         font-size: $font-size-md;
-                        // max-width: 80px;
-
                     }
                 }
 
@@ -93,7 +88,6 @@ main {
                         width: 64px;
                         height: 64px;
                         border-radius: 50px;
-
                     }
 
                     img {
@@ -101,7 +95,6 @@ main {
                         height: 100%;
                         object-fit: contain;
                     }
-
                 }
             }
         }
@@ -127,12 +120,8 @@ main {
 
                 @include for-tablet {
                     font-size: $font-size-md;
-                    
                 }
-
             }
-
         }
-
     }
 }

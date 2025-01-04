@@ -30,7 +30,6 @@ const Collapsible = ({ title, description }) => {
     );
 };
 
-
 Collapsible.propTypes = {
     title: PropTypes.string.isRequired,
     // La description accepte : string ou array
@@ -38,7 +37,6 @@ Collapsible.propTypes = {
         PropTypes.string,
         PropTypes.arrayOf(PropTypes.string)
     ]).isRequired
-
 }
 
 export default Collapsible;

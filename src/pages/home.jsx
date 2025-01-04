@@ -20,7 +20,6 @@ const Home = () => {
                     {lodgings.map((lodging) => 
                     <Card key={lodging.id} title={lodging.title} id={lodging.id} cover={lodging.cover} />
                     )}
-
                 </section>
             </main>
         </>

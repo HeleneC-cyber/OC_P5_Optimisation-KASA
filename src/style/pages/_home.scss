@@ -5,7 +5,6 @@
     margin-bottom: 27px;
     display: grid;
     grid-template-columns: 1fr;
-    // grid-template-rows: 255px;
     row-gap: 20px;
 
     @include for-tablet {
@@ -13,7 +12,6 @@
         background-color:$color-002;
         border-radius: 25px;
         grid-template-columns: 1fr 1fr;
-        // grid-template-rows: 340px;
         row-gap: 50px;
         column-gap: 60px;
     }
@@ -21,5 +19,4 @@
     @include for-desktop {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }

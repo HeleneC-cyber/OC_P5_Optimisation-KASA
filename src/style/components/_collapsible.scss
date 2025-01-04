@@ -3,18 +3,15 @@
 
 
 .title-desc-container {
-    // position: relative;
     background-color: $color-003;
     width: 100%;
     margin-bottom: 20px;
     border-radius: 5px;
     height: fit-content;
 
-
     @include for-tablet {
         margin-bottom: 28px;
     }
-
 
     button {
         width: 100%;
@@ -65,6 +62,7 @@
             opacity: 0;
         }
     }
+    
     .description {
         font-size: $font-size-xxs;
         font-weight: 400;
@@ -87,8 +85,8 @@
         &.open {
             // clip-path: inset(0 0 0 0); // Affiche le contenu
         // transition: clip-path 0.7s ease;
-        padding: 13px 20px;
         // height: fit-content;
+        padding: 13px 20px;
         animation: slideDown 0.3s ease forwards;
         }
         &.closed {

@@ -28,23 +28,12 @@ const Slider = ({ pictures, title }) => {
 
     return (
             <div className="slider">
-                {/* {pictures.length > 1 &&  } */}
                 <div className="slides-container">
                     <div className="slide">
                         <img src={pictures[index]} alt={title} /> 
                     </div>
-                    
-                    {/* {pictures?.map((slide) => {
-                        return(
-
-                            <div className="slide" key={slide}>
-                            <img src={slide} alt={title} />
-
-                        </div>
-                        )
-                    })} */}
-
                 </div>
+                
                 {pictures.length > 1 && 
                 <>
                 <img className="chevron-prev" onClick={prevSlide} src={sliderChevron} alt="chevron précédent" />
