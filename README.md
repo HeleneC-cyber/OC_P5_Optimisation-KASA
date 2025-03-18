@@ -36,16 +36,16 @@ L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio
 ![Séparateur coloré](./public/séparateur.png)
 
 ## 📂 Structure
-📁  OC_P5_Optimisation-KASA/kasa-app/
-│── 📁 public/
-│── 📁 src/
-  │── 📁 assets/
-  │── 📁 styles/
-  │── 📁 data/
-  │── 📁 components/
-  │── 📁 pages/
-│── appRouter.jsx
-│── main.jsx
+📁  OC_P5_Optimisation-KASA/kasa-app/<br>
+│── 📁 public/<br>
+│── 📁 src/<br>
+│    └── 📁 assets/<br>
+│    └── 📁 styles/<br>
+│    └── 📁 data/<br>
+│    └── 📁 components/<br>
+│    └── 📁 pages/<br>
+│    └── appRouter.jsx<br>
+│    └── main.jsx<br>
 │── README.md
 <br><br>
 
@@ -57,6 +57,8 @@ L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio
    ```bash
    cd OC_P5_Optimisation-KASA
 3. **Installer les dépendances** :
+   ```bash
+   npm install
 4. **Lancer l'application** en mdoe développement :
    ```bash
    npm run dev
