@@ -59,7 +59,7 @@ L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio
 3. **Installer les dépendances** :
    ```bash
    npm install
-4. **Lancer l'application** en mdoe développement :
+4. **Lancer l'application** en mode développement :
    ```bash
    npm run dev
 <br><br>
