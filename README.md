@@ -75,7 +75,7 @@ L'occasion parfaite pour vous d'ajouter une belle référence à votre portfolio
 - L'utilisation de Sass suit la logique des composants de React, en permettant l'importation uniquement du style nécessaire pour chaque composant, pour de meilleures performances, une meilleure lisibilité et maintenabilité.
 <br><br>
 
-![Séparateur coloré](./images/Readme-separation.png)
+![Séparateur coloré](./public/séparateur.png)
 
 ## 📬 Contact
 Pour toute question ou suggestion, n'hésitez pas à me contacter sur [LinkedIn](https://www.linkedin.com/in/helene-canovas-48710b141/)
